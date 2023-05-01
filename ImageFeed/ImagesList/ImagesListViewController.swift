@@ -7,11 +7,10 @@
 
 import UIKit
 
-private let photosName: [String] = Array(0..<20).map{ "MockImage\($0)" }
-
 class ImagesListViewController: UIViewController {
+    private let photosName: [String] = Array(0..<20).map { "MockImage\($0)" }
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +25,14 @@ class ImagesListViewController: UIViewController {
         return formatter
     }()
     
-    func configCell(for cell: ImagesListCell, with IndexPath: IndexPath) {
-        let imageName = photosName[IndexPath.row]
+    func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
+        let imageName = photosName[indexPath.row]
         guard let image = UIImage(named: imageName) else {
             return
         }
         cell.cellImage.image = image
         
-        cell.likeButton.imageView?.image = (IndexPath.row + 1) % 2 == 0 ? UIImage(named: "LikeImage") : UIImage(named: "NoLikeImage")
+        cell.likeButton.setImage(indexPath.row % 2 == 0 ? UIImage(named: "LikeImage") : UIImage(named: "NoLikeImage"), for: .normal)
         
         cell.dateLabel.text = dateFormatter.string(from: Date())
         
