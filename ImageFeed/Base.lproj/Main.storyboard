@@ -230,68 +230,10 @@
                     <view key="view" contentMode="scaleToFill" id="15A-fA-Zf7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPick" translatesAutoresizingMaskIntoConstraints="NO" id="u1f-1b-SEW" userLabel="Avatar View">
-                                <rect key="frame" x="16" y="99" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="CPj-X9-qIv"/>
-                                    <constraint firstAttribute="height" constant="70" id="ukK-jP-yyJ"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky1-6h-RoD" userLabel="Logout Button">
-                                <rect key="frame" x="333" y="112" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="1Z6-I4-DVn"/>
-                                    <constraint firstAttribute="width" constant="44" id="A9p-yw-er9"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="Logout"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов Иван Иваныч" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-DZ-1jA" userLabel="Name Label">
-                                <rect key="frame" x="16" y="177" width="361" height="27.666666666666657"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ivan_ivan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0q-ah-axx" userLabel="Login Label">
-                                <rect key="frame" x="16" y="212.66666666666666" width="361" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" name="YP Gray"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hell to word!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-fm-SZw" userLabel="Description Label">
-                                <rect key="frame" x="16" y="236.66666666666666" width="361" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jY3-ik-vOk"/>
                         <color key="backgroundColor" name="YP Black"/>
-                        <constraints>
-                            <constraint firstItem="Q0q-ah-axx" firstAttribute="leading" secondItem="jY3-ik-vOk" secondAttribute="leading" constant="16" id="4eJ-lA-Clw"/>
-                            <constraint firstItem="u1f-1b-SEW" firstAttribute="leading" secondItem="jY3-ik-vOk" secondAttribute="leading" constant="16" id="7n5-DC-2oT"/>
-                            <constraint firstItem="Q0q-ah-axx" firstAttribute="top" secondItem="gDs-DZ-1jA" secondAttribute="bottom" constant="8" id="8Eo-M5-dCq"/>
-                            <constraint firstItem="jY3-ik-vOk" firstAttribute="trailing" secondItem="Q0q-ah-axx" secondAttribute="trailing" constant="16" id="JO9-Np-Cul"/>
-                            <constraint firstItem="gDs-DZ-1jA" firstAttribute="leading" secondItem="jY3-ik-vOk" secondAttribute="leading" constant="16" id="LzH-4H-6It"/>
-                            <constraint firstItem="gDs-DZ-1jA" firstAttribute="top" secondItem="u1f-1b-SEW" secondAttribute="bottom" constant="8" id="OLj-6k-kIT"/>
-                            <constraint firstItem="jY3-ik-vOk" firstAttribute="trailing" secondItem="Ky1-6h-RoD" secondAttribute="trailing" constant="16" id="STd-4d-6jf"/>
-                            <constraint firstItem="Ky1-6h-RoD" firstAttribute="centerY" secondItem="u1f-1b-SEW" secondAttribute="centerY" id="dbJ-iY-D3F"/>
-                            <constraint firstItem="jY3-ik-vOk" firstAttribute="trailing" secondItem="isQ-fm-SZw" secondAttribute="trailing" constant="16" id="dze-4K-YvN"/>
-                            <constraint firstItem="jY3-ik-vOk" firstAttribute="trailing" secondItem="gDs-DZ-1jA" secondAttribute="trailing" constant="16" id="gcQ-Qv-Iy9"/>
-                            <constraint firstItem="isQ-fm-SZw" firstAttribute="top" secondItem="Q0q-ah-axx" secondAttribute="bottom" constant="8" id="gzU-VE-jxF"/>
-                            <constraint firstItem="isQ-fm-SZw" firstAttribute="leading" secondItem="jY3-ik-vOk" secondAttribute="leading" constant="16" id="nGj-8t-wWv"/>
-                            <constraint firstItem="u1f-1b-SEW" firstAttribute="top" secondItem="jY3-ik-vOk" secondAttribute="top" constant="40" id="tO3-p7-zan"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="LaX-Sm-j5b"/>
-                    <connections>
-                        <outlet property="avatarView" destination="u1f-1b-SEW" id="5UJ-tk-VFU"/>
-                        <outlet property="descriptionLabel" destination="isQ-fm-SZw" id="5v6-FB-86H"/>
-                        <outlet property="loginLabel" destination="Q0q-ah-axx" id="zDN-Wy-pX7"/>
-                        <outlet property="logoutButton" destination="Ky1-6h-RoD" id="ack-Gt-cBs"/>
-                        <outlet property="nameLabel" destination="gDs-DZ-1jA" id="4a4-RV-ugs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct1-D1-JOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,17 +243,12 @@
     <resources>
         <image name="BackArrow" width="24" height="24"/>
         <image name="LikeImage" width="30" height="28"/>
-        <image name="Logout" width="44" height="44"/>
         <image name="MockImage0" width="200" height="132"/>
         <image name="ShareIcon" width="23" height="21"/>
         <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
-        <image name="userPick" width="70" height="70"/>
         <namedColor name="YP Black">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="YP Gray">
-            <color red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
