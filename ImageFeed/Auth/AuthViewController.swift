@@ -28,6 +28,15 @@ extension AuthViewController: WebViewViewControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     func webViewViewController(_ vc: WebViewViewController, didAuthenticateWithCode code: String) {
-        // TODO
+        print(code)
+        let oAuth = OAuth2Service()
+        oAuth.fetchOAuthToken(code) {result in
+            switch result {
+            case .success(let data):
+                print("Success: \(data)")
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
     }
 }
