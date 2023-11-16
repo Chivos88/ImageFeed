@@ -23,6 +23,7 @@
 		8CEC4E242B03515900984B37 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC4E232B03515900984B37 /* URLRequest.swift */; };
 		8CEC4E262B0351E500984B37 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC4E252B0351E500984B37 /* URLSession.swift */; };
 		8CEC4E282B03563400984B37 /* OAuth2TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC4E272B03563400984B37 /* OAuth2TokenStorage.swift */; };
+		8CEC4E2A2B04C2A900984B37 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC4E292B04C2A900984B37 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8CEC4E232B03515900984B37 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		8CEC4E252B0351E500984B37 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		8CEC4E272B03563400984B37 /* OAuth2TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenStorage.swift; sourceTree = "<group>"; };
+		8CEC4E292B04C2A900984B37 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				8C9CE15D29FD67CA00502E73 /* LaunchScreen.storyboard */,
 				8C9CE16029FD67CA00502E73 /* Info.plist */,
 				8C049B172AEAA9A60019EEA0 /* Constants.swift */,
+				8CEC4E292B04C2A900984B37 /* SplashViewController.swift */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8CCECA962A18D621000D1B57 /* ProfileViewController.swift in Sources */,
 				8CEC4E242B03515900984B37 /* URLRequest.swift in Sources */,
 				8C9CE15329FD67C900502E73 /* AppDelegate.swift in Sources */,
+				8CEC4E2A2B04C2A900984B37 /* SplashViewController.swift in Sources */,
 				8CEC4E222B034D2700984B37 /* OAuth2Service.swift in Sources */,
 				8C049B1A2AEAC5B30019EEA0 /* AuthViewController.swift in Sources */,
 				8CEC4E262B0351E500984B37 /* URLSession.swift in Sources */,

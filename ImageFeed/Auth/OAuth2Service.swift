@@ -29,6 +29,7 @@ final class OAuth2Service {
             case .success(let body):
                 let authToken = body.accessToken
                 self.authToken = authToken
+                
                 completion(.success(authToken))
             case .failure(let error):
                 completion(.failure(error))
@@ -74,14 +75,20 @@ extension OAuth2Service {
         }
     }
     private func authTokenRequest(code: String) -> URLRequest {
-        URLRequest.makeHTTPRequest(
-            path: "/oauth/token"
-            + "?client_id=\(accessKey)"
-            + "&&client_secret=\(secretKey)"
-            + "&&redirect_uri=\(redirectURI)"
-            + "&&code=\(code)"
-            + "&&grant_type=authorization_code",
+        let bodyData = ["client_id": accessKey,
+                    "client_secret": secretKey,
+                    "redirect_uri": redirectURI,
+                    "code": code,
+                    "grant_type":"authorization_code"]
+        
+        var request = URLRequest.makeHTTPRequest(
+            path: "/oauth/token",
             httpMethod: "POST"
         )
+        do {
+            request.httpBody = try? JSONSerialization.data(withJSONObject: bodyData, options: [])
+        }
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        return request
     }
 }
